@@ -23,7 +23,7 @@ html{
 body {
 	width: 100%;
 	height: 100%;
-	background: url("images/sitebg3.jpg") no-repeat center fixed;
+	background: url("images/nightsky.jpg") no-repeat center fixed;
 	background-size: cover;
 }
 
@@ -46,6 +46,7 @@ img {
 }
 
 
+
 /*end global*/
 
 /*reusable*/
@@ -65,7 +66,7 @@ img {
 
 .section-heading h1{
 	font-size: 3.5rem;
-	color: rgba(255,255,255, .3);
+	color: rgba(255,255,255, .5);
 	text-transform: uppercase;
 	font-weight: 300;
 	position: relative;
@@ -103,7 +104,6 @@ img {
 .has-margin-right {
 	margin-right: 5rem;
 }
-
 
 /*end reusable*/
 
@@ -146,7 +146,7 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-	background: linear-gradient(to top, #ffe838, #fd57bf);
+	background: linear-gradient(to top, #99f2c8, #fd57bf);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -176,7 +176,7 @@ li {
 }
 
 .bar {
-	background: linear-gradient(to right, #ffe838, #fd57bf);
+	background: linear-gradient(to right, #99f2c8, #fd57bf);
 	width: 100%;
 	height: 4px;
 	border-radius: .8rem;
@@ -218,7 +218,7 @@ li {
 .landing-text h1 {
 	font-size: 20rem;
 	font-family: 'The Historia Demo', sans-serif;
-	background: linear-gradient(to top, #ffe838, #fd57bf);
+	background: linear-gradient(to top, #99f2c8, #fd57bf);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	padding: 1rem;
@@ -227,7 +227,10 @@ li {
 
 .landing-text h6 {
 	font-size: 2rem;
-	font-weight: 300;
+	font-weight: 700;
+	background: -webkit-linear-gradient(#7F7FD5, #99f2c8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /*end header*/
@@ -248,12 +251,13 @@ li {
 
 .about-heading h1 {
 	font-size: 10rem;
-	opacity: .3;
+	opacity: .5;
 }
 
 .about-heading h6 {
 	font-size: 2rem;
 	font-weight: 300;
+	
 }
 
 .profile-img {
@@ -272,19 +276,20 @@ li {
 .social-media i {
 	font-size: 5rem;
 	transition: color 650ms;
+	color: #fd57bf;
 }
 
 .fa-github:hover {
 	color: #967bb6;
 }
 
-.fa-twitter:hover {
+/* .fa-twitter:hover {
 	color: #38a1f3;
 }
 
 .fa-linkedin-in:hover {
 	color: #0e76a8;
-}
+} */
 
 
 /*end about*/
@@ -316,7 +321,7 @@ li {
 .icon-container {
 	width: 10rem;
 	height: 10rem;
-	border: 3px solid #ffe838;
+	border: 3px solid #99f2c8;
 	background-color: #fd57bf;
 	margin-bottom:2rem;
 	display: flex;
@@ -324,7 +329,7 @@ li {
 }
 
 .icon-container i {
-	color: #ffe838;
+	color: #99f2c8;
 	font-size: 5rem;
 	margin: auto;
 	transform: rotate(-45deg);
@@ -387,7 +392,7 @@ li {
 
 /*timeline*/
 .timeline ul {
-	border-left: 4px solid #ffe838;
+	border-left: 4px solid #99f2c8;
 	border-radius: .8rem;
 	background-color: rgba(0,0,0,0.05);
 	margin: 0 auto;
@@ -501,22 +506,23 @@ input[type="submit"] {
 }
 
 .up {
-	position: absolute;
+	position: fixed;
+	bottom: 5rem;
+	right: 5rem;
+	display: none;
+	background-color: #eee;
 	width: 5rem;
 	height: 5rem;
-	background-color: #eee;
-	top: -2.5rem;
-	right: 5rem;
 	border-radius:  100%;
-	display: flex;
 	animation: pulse 2s infinite;
 	cursor: pointer;
+	/* z-index: 18; */
 }
 
 .up i {
 	color: #16162d;
 	font-size: 2rem;
-	margin: auto;
+	margin-top: 1rem;
 }
 
 .copyright p {
@@ -545,10 +551,22 @@ input[type="submit"] {
 
 
 /*media queries*/
+@media screen and (max-width: 1000px) {
+	.nav-list {
+		flex-direction: column;
+	}
+	li {
+		margin: 2rem 0;
+	}
+
+	.nav-link {
+		font-size: 4.5rem;
+	}
+}
 
 @media screen and (max-width: 768px) {
 	body {
-	background: url("images/sitebg3.jpg") no-repeat center fixed;
+	background: url("images/nightsky.jpg") no-repeat center fixed;
 	background-size: cover;
 	}
 
