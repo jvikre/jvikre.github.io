@@ -478,10 +478,11 @@ textarea {
 }
 
 input[type="submit"] {
-	width: initial;
+	/* width: initial; */
 	background-color: #fd57bf;
 	color: #eee;
 	padding: 1rem 2rem;
+	margin-top: 15px;
 	border-radius: .8rem;
 	cursor: pointer;
 	transition: background-color 650ms;
