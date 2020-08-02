@@ -200,13 +200,14 @@
 					<h1>Contact</h1>
 					<h6>Let's work together</h6>
 				</div>
-				<form name="contact" action="POST" data-netlify="true" data-aos="fade-up" data-aos-delay="300">
+				<form name="contact" action="POST" data-netlify="true" data-netlify-recaptcha="true" data-aos="fade-up" data-aos-delay="300">
 					<label for="name">Name:</label>
 					<input type="text" id="name" name="name" placeholder="Enter your name..." required>
 					<label for="email">Email:</label>
 					<input type="email" id="email" name="email" placeholder="Enter your email..." required>
 					<label for="subject">Subject:</label>
 					<textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+					<div data-netlify-recaptcha="true"></div>
 					<input type="submit" value="Submit">
 				</form>
 			</div>
