@@ -459,6 +459,10 @@ li {
 	background-color: #181439;
 }
 
+.contact-heading {
+	margin-bottom: 0;
+}
+
 form {
 	width: 70%;
 	margin: 0 auto;
@@ -491,6 +495,10 @@ input[type="submit"] {
 input[type="submit"] {
 	color: #221e3f;
 	background-color: #fd57bf;;
+}
+
+.hidden {
+	visibility: hidden;
 }
 
 /*end contact*/
